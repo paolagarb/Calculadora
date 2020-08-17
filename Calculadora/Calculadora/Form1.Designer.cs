@@ -44,43 +44,59 @@
             // 
             // btnSoma
             // 
+            this.btnSoma.FlatAppearance.BorderSize = 0;
+            this.btnSoma.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnSoma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnSoma.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSoma.Location = new System.Drawing.Point(65, 146);
+            this.btnSoma.Location = new System.Drawing.Point(62, 170);
             this.btnSoma.Name = "btnSoma";
             this.btnSoma.Size = new System.Drawing.Size(57, 45);
             this.btnSoma.TabIndex = 0;
             this.btnSoma.Text = "+";
             this.btnSoma.UseVisualStyleBackColor = true;
+            this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
             // 
             // btnSubtracao
             // 
+            this.btnSubtracao.FlatAppearance.BorderSize = 0;
+            this.btnSubtracao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnSubtracao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnSubtracao.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtracao.Location = new System.Drawing.Point(148, 146);
+            this.btnSubtracao.Location = new System.Drawing.Point(145, 170);
             this.btnSubtracao.Name = "btnSubtracao";
             this.btnSubtracao.Size = new System.Drawing.Size(57, 45);
             this.btnSubtracao.TabIndex = 1;
             this.btnSubtracao.Text = "-";
             this.btnSubtracao.UseVisualStyleBackColor = true;
+            this.btnSubtracao.Click += new System.EventHandler(this.btnSubtracao_Click);
             // 
             // btnMultiplicacao
             // 
+            this.btnMultiplicacao.FlatAppearance.BorderSize = 0;
+            this.btnMultiplicacao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnMultiplicacao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnMultiplicacao.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicacao.Location = new System.Drawing.Point(65, 211);
+            this.btnMultiplicacao.Location = new System.Drawing.Point(62, 235);
             this.btnMultiplicacao.Name = "btnMultiplicacao";
             this.btnMultiplicacao.Size = new System.Drawing.Size(57, 45);
             this.btnMultiplicacao.TabIndex = 2;
             this.btnMultiplicacao.Text = "*";
             this.btnMultiplicacao.UseVisualStyleBackColor = true;
+            this.btnMultiplicacao.Click += new System.EventHandler(this.btnMultiplicacao_Click);
             // 
             // btnDivisao
             // 
+            this.btnDivisao.FlatAppearance.BorderSize = 0;
+            this.btnDivisao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnDivisao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnDivisao.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivisao.Location = new System.Drawing.Point(148, 211);
+            this.btnDivisao.Location = new System.Drawing.Point(145, 235);
             this.btnDivisao.Name = "btnDivisao";
             this.btnDivisao.Size = new System.Drawing.Size(57, 45);
             this.btnDivisao.TabIndex = 3;
             this.btnDivisao.Text = "/";
             this.btnDivisao.UseVisualStyleBackColor = true;
+            this.btnDivisao.Click += new System.EventHandler(this.btnDivisao_Click);
             // 
             // label1
             // 
@@ -109,7 +125,7 @@
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.ForeColor = System.Drawing.Color.White;
-            this.lblResultado.Location = new System.Drawing.Point(89, 274);
+            this.lblResultado.Location = new System.Drawing.Point(131, 135);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(0, 20);
             this.lblResultado.TabIndex = 6;
@@ -142,23 +158,31 @@
             // 
             // btnLimpar
             // 
+            this.btnLimpar.FlatAppearance.BorderSize = 0;
+            this.btnLimpar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnLimpar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(50, 274);
+            this.btnLimpar.Location = new System.Drawing.Point(45, 301);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(74, 28);
             this.btnLimpar.TabIndex = 11;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSair
             // 
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnSair.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(146, 274);
+            this.btnSair.Location = new System.Drawing.Point(145, 301);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(74, 28);
             this.btnSair.TabIndex = 12;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // Form1
             // 
