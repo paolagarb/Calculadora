@@ -13,7 +13,7 @@ namespace Calculadora
     public partial class Form1 : Form
     {
         private double num1, num2;
-        private string operacao ="";
+        private string operacao = "";
         private bool resultado;
 
         public Form1()
@@ -25,7 +25,7 @@ namespace Calculadora
         {
             switch (operacao)
             {
-                
+
                 case "+":
                     txtResultado.Text = (num1 + num2).ToString();
                     break;
@@ -38,14 +38,18 @@ namespace Calculadora
                         MessageBox.Show("Erro! Não é possível realizar divisão por 0.");
                         break;
                     }
-                    txtResultado.Text = (num2 / num2).ToString();
-                    break;
+                    else
+                    {
+                        txtResultado.Text = (num1 / num2).ToString();
+                        break;
+                    }
+
                 case "*":
                     txtResultado.Text = (num1 * num2).ToString();
                     break;
-               /* case "√":
-                    txtResultado.Text = (Math.Sqrt(num2)).ToString();
-                    break;*/
+                    /* case "√":
+                         txtResultado.Text = (Math.Sqrt(num2)).ToString();
+                         break;*/
             }
         }
 
@@ -59,7 +63,7 @@ namespace Calculadora
                 resultado = false;
             }
             txtResultado.Text += button.Text;
-            
+
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -117,8 +121,8 @@ namespace Calculadora
             if (!(txtResultado.Text.Equals(string.Empty)))
             {
                 num1 = Convert.ToDouble(txtResultado.Text);
-                operacao = "√";
-                txtResultado.Clear();
+                txtResultado.Text = (Math.Sqrt(num1)).ToString();
+                resultado = false;
             }
         }
 
@@ -127,10 +131,12 @@ namespace Calculadora
             if (txtResultado.Text.Equals(string.Empty))
             {
                 txtResultado.Text = "0,";
-            } else
+            }
+            else
             {
                 txtResultado.Text += ",";
             }
+            resultado = false;
         }
 
         private void btnResultado_Click(object sender, EventArgs e)
